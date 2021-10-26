@@ -24,7 +24,7 @@ body {
   font-weight: 400;
   margin: 0px;
   padding: 2.5% 3.25%;
-  overflow: hidden;
+
 }
 
 label {
@@ -43,16 +43,10 @@ input {
   margin-bottom: 45px;
 }
 
-.ellipse-bl-smallview {
-  display: none;
-}
-
-.ellipse-br-smallview {
-  display: none;
-}
 
 .main-container {
   z-index: 1;
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
@@ -170,6 +164,14 @@ input {
   width: 37.5%;
   top: 15.625%;
   right: 4.167%;
+}
+
+.ellipse-bl-smallview {
+  display: none;
+}
+
+.ellipse-br-smallview {
+  display: none;
 }
 
 @media only screen and (min-width:1570px) {
@@ -375,7 +377,7 @@ input {
   }
 
   .ellipse-bl-smallview {
-    display: unset;
+    display: block;
     z-index: -1;
     width: 154.6%;
     height: 70.15%;
@@ -385,14 +387,20 @@ input {
   }
 
   .ellipse-br-smallview {
-    display: unset;
+    display: block;
     z-index: -1;
     width: 269.24%;
     height: 115.9%;
     position: absolute;
     top: 58.30%;
-    right: -32.3%;
+    right: 0%;
   }
 
 
+}
+
+@media only screen and (min-width:300px) {
+  body, html {
+    overflow: hidden;
+  }
 }
