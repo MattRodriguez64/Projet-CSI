@@ -23,7 +23,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin: 0px;
-  padding: 20px 39px;
+  padding: 2.5% 3.25%;
   overflow: hidden;
 }
 
@@ -41,6 +41,14 @@ input {
   border-bottom: 1px solid var(--very-dark-gray);
   line-height: 35px;
   margin-bottom: 45px;
+}
+
+.ellipse-bl-smallview {
+  display: none;
+}
+
+.ellipse-br-smallview {
+  display: none;
 }
 
 .main-container {
@@ -65,18 +73,12 @@ input {
   height: 100px;
 }
 
-.header-title {
-  display: inline-block;
+.header-logo {
   float: left;
-  font-size: 40px;
-  color: var(--gray);
+  margin: 0px;
+  width: auto;
+  height: inherit;
 }
-
-/* .header::before {
-  content: "S";
-  color: var(--very-dark-gray);
-  font-size: 55px;
-} */
 
 .header-nav {
   float: right;
@@ -138,28 +140,259 @@ input {
 
 .ellipse-bottom {
   z-index: -1;
+  width: 125%;
+  height: 17.875%;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0%;
+  left: -11.5%;
 }
 
 .ellipse-right-top {
   z-index: -1;
+  width: 65.67%;
+  height: 113.25%;
   position: absolute;
-  top: -200px;
-  right: -150px;
+  top: -25%;
+  right: -12.5%;
 }
 
 .ellipse-right-bottom {
   z-index: -1;
+  width: 41%;
+  height: 41%;
   position: absolute;
-  right: -85px;
-  bottom: -85px;
+  right: -10.625%;
+  bottom: -7.08%;
 }
 
 .logo-welcome {
   position: absolute;
-  width: 450px;
-  top: 125px;
-  right: 50px;
+  width: 37.5%;
+  top: 15.625%;
+  right: 4.167%;
+}
+
+@media screen and (min-width:1570px) {
+  .logo-welcome {
+    width: 540px;
+  }
+
+}
+
+@media screen and (min-width:2500px) {
+
+  label {
+    font-size: 4.375em;
+  }
+
+  input {
+    font-size: 3.75em;
+    margin-bottom: 5.625%;
+    border-bottom: 5px solid var(--very-dark-gray);
+  }
+
+  .header {
+    height: 12.5%;
+  }
+  .header-logo {
+    width: 20.4167%;
+    height: auto;
+  }
+  .header-nav li {
+    margin-right: 20vh;
+  }
+
+  .header-link a {
+    font-size: 4.375em;
+  }
+  .logo-welcome {
+    width: 37.5%;
+  }
+
+  .input-email {
+    width: 50%;
+  }
+
+  .input-password {
+    width: 50%;
+  }
+
+  .signup-container {
+    width: 50%;
+    height: auto;
+    margin-top: 14.875%;
+  }
+
+  .signup-form-btn {
+    font-size: 4.375em;
+    padding: 2.25% 6.83%;
+  }
+  .signup-form-btn:hover {
+    border: 5px var(--very-dark-gray) solid;
+  }
+}
+
+@media screen and (max-width:1100px) {
+
+  label {
+    font-size: 26px;
+  }
+
+  input {
+    font-size: 22px;
+    margin-bottom: 5.625%;
+  }
+
+  .input-email {
+    width: 270px;
+  }
+
+
+  .input-password {
+    width: 350px;
+  }
+
+  .header-nav li {
+    margin-right: 10vh;
+  }
+
+  .header-link a {
+    font-size: 26px;
+  }
+
+  .signup-form-btn {
+    font-size: 26px;
+    padding: 2.25% 6.83%;
+  }
+
+  .ellipse-bottom {
+    height: 40.875%;
+  }
+
+  .ellipse-right-bottom {
+    width: 54%;
+    height: 54%;
+    bottom: -2.08%;
+  }
+
+}
+
+@media screen and (max-width:860px) {
+
+  label {
+    margin-left: 21px;
+    font-size: 20px;
+  }
+
+  input {
+    margin-left: 21px;
+    font-size: 20px;
+  }
+
+  body {
+    padding-top: 0px;
+    padding-left: 0px;
+    overflow: hidden;
+  }
+  .header {
+    flex-flow: column;
+    align-items: stretch;
+    background: #FFFB63;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 0px 225px;
+  }
+
+  .header-nav {
+    position: absolute;
+    top: 98px;
+    right: 0px;
+    width: 50.52%;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 0px 225px;
+  }
+
+  .header-nav ul {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+  }
+
+  .header-logo {
+    position: relative;
+    top: -50px;
+    height: 200px;
+    margin: 0px auto 0px auto;
+  }
+
+
+  .header-nav li {
+    margin-right: unset;
+  }
+
+  .header-link a {
+    font-size: 15px;
+  }
+
+  .signup-container {
+    width: auto;
+    height: auto;
+    margin-top: 119px;
+  }
+
+  .input-email {
+    width: 270px;
+  }
+
+
+  .input-password {
+    width: 350px;
+  }
+
+  .signup-form-btn {
+    font-size: 14px;
+    padding: 8px 38px;
+  }
+
+  .logo-welcome {
+    display: block;
+    position: unset;
+    top: unset;
+    right: unset;
+    width: 230px;
+    margin: 60px auto 0px auto;
+  }
+  .ellipse-bottom {
+    display: none;
+  }
+
+  .ellipse-right-top {
+    display: none;
+  }
+
+  .ellipse-right-bottom {
+    display: none;
+  }
+
+  .ellipse-bl-smallview {
+    display: unset;
+    z-index: -1;
+    width: 154.6%;
+    height: 70.15%;
+    position: absolute;
+    top: 54.39%;
+    left: -51.29%;
+  }
+
+  .ellipse-br-smallview {
+    display: unset;
+    z-index: -1;
+    width: 269.24%;
+    height: 115.9%;
+    position: absolute;
+    top: 58.30%;
+    right: -32.3%;
+  }
+
+
 }
