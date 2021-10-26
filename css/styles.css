@@ -101,6 +101,7 @@ input {
 
 .signup-container {
   width: 572px;
+  z-index: 5;
   height: auto;
   margin-top: 119px;
 }
@@ -160,6 +161,7 @@ input {
 }
 
 .logo-welcome {
+  z-index: 0;
   position: absolute;
   width: 37.5%;
   top: 15.625%;
@@ -403,4 +405,10 @@ input {
   }
 
 
+}
+
+@media only screen and (max-height:720px){
+  .logo-welcome {
+    bottom: 0px;
+  }
 }
