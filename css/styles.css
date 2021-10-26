@@ -172,14 +172,14 @@ input {
   right: 4.167%;
 }
 
-@media screen and (min-width:1570px) {
+@media only screen and (min-width:1570px) {
   .logo-welcome {
     width: 540px;
   }
 
 }
 
-@media screen and (min-width:2500px) {
+@media only screen and (min-width:2500px) {
 
   label {
     font-size: 4.375em;
@@ -232,7 +232,7 @@ input {
   }
 }
 
-@media screen and (max-width:1100px) {
+@media only screen and (max-width:1100px) {
 
   label {
     font-size: 26px;
@@ -277,7 +277,7 @@ input {
 
 }
 
-@media screen and (max-width:860px) {
+@media only screen and (max-width:860px) {
 
   label {
     margin-left: 21px;
