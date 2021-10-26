@@ -49,7 +49,6 @@ input {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 .header {
@@ -297,6 +296,11 @@ input {
     padding-left: 0px;
     overflow: hidden;
   }
+
+  .main-container {
+    overflow: hidden;
+  }
+  
   .header {
     flex-flow: column;
     align-items: stretch;
