@@ -350,6 +350,7 @@ input {
 
   .input-password {
     width: 350px;
+    margin-bottom: 100px;
   }
 
   .signup-form-btn {
@@ -359,9 +360,11 @@ input {
 
   .logo-welcome {
     display: block;
-    position: unset;
+    position: absolute;
+    bottom: 50px;
     top: unset;
-    right: unset;
+    left: 0px;
+    right: 0px;
     width: 230px;
     margin: 60px auto 0px auto;
   }
