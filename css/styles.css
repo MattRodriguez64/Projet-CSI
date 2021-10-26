@@ -294,13 +294,12 @@ input {
   body {
     padding-top: 0px;
     padding-left: 0px;
-    overflow: hidden;
   }
 
   .main-container {
     overflow: hidden;
   }
-  
+
   .header {
     flex-flow: column;
     align-items: stretch;
