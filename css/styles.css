@@ -24,7 +24,7 @@ body {
   font-weight: 400;
   margin: 0px;
   padding: 2.5% 3.25%;
-
+  overflow: hidden;
 }
 
 label {
@@ -47,7 +47,6 @@ input {
 .main-container {
   z-index: 1;
   position: relative;
-  overflow: hidden;
   width: 100vw;
   height: 100vh;
 }
