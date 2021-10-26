@@ -362,7 +362,6 @@ input {
   }
 
   .logo-welcome {
-    display: block;
     position: absolute;
     bottom: 50px;
     top: unset;
