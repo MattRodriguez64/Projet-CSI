@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "robotoregular";
+  src: url("fonts/Roboto-Regular-webfont.eot");
+  src: url("fonts/Roboto-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/Roboto-Regular-webfont.woff2") format("woff2"),
+    url("fonts/Roboto-Regular-webfont.woff") format("woff"),
+    url("fonts/Roboto-Regular-webfont.ttf") format("truetype"),
+    url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ****************************************************************** */
+
+body {
+  font-family: "robotoregular", sans-serif;
+  background-color: white;
+}
+/* ****************************************************************** */
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.header-nav {
+  display: flex;
+  width: 350px;
+  justify-content: space-around;
+  list-style-type: none;
+  text-decoration: none;
+  background-color: yellow;
+  border-radius: 225px 0px;
+  padding: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+header ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+ li a {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+
+}
+
+.header-logo {
+  width: 150px;
+}
+
+/* ****************************************************************** */
+
+Section {
+  margin: 30px 15px 30px 15px;
+
+}
+
+.Section {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+article {
+  width: 100%;
+}
+
+article ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+article p a {
+  width: 100%;
+}
+
+#pageen2 {
+  display: block;
+}
+
+.etat_civil {
+  display: flex;
+  justify-content: flex-start;
+}
+.rdv {
+  display: block;
+  width: 40%;
+
+}
+.rdv a {
+      list-style-type: none;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.donnees {
+  width: 50%;
+  display: block;
+  justify-content: space-around;
+}
+
+.donnees li {
+  padding: 20px;
+  border-bottom: 1px solid rgb(165, 161, 161);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 35px;
+
+}
+
+.Btn {
+  display: flex;
+  justify-content: center;
+}
+
+.Btn_confirmer {
+  font-weight: bold;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+  background-color: yellow;
+  border-radius: 225px 0px;
+}
+
+td, th{
+  padding: 15px;
+  border-bottom: 1px solid rgb(105, 105, 105);
+}
+
+
+/* ****************************************************************** */
+/* ****************************************************************** */
